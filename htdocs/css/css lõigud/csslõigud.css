@@ -1,0 +1,73 @@
+.spec-attribute{
+    background-color: yellow;
+    border: solid 2px red;
+}
+.spec-value{
+    color:blue;
+}
+p >:first-of-type{
+    font-weight: bold;
+    color: red;
+}
+p> :nth-of-type(3){
+    text-decoration: underline;
+}
+/*esimene lÃµik*/
+p:first-of-type{
+    background-color: rgb(175, 210, 175);
+    border: solid green;
+    width: 30vh;
+}
+/*teine lÃµik*/
+p:nth-of-type(2){
+    background-color: rgb(202, 221, 245);
+    border: solid rgba(0, 0, 255, 0.637);
+    border-style: double;
+    text-indent: 68px;
+    width: 30vh;
+}
+p:nth-of-type(3){
+    background-color: rgb(243, 196, 196);
+    border: solid rgb(166, 88, 137);
+    border-style: double;
+    text-indent: 15px;
+    width: 25vh;
+}
+
+p:nth-of-type(4){
+    background-color: rgb(251, 251, 251);
+    border: solid rgb(248, 13, 13);
+    border-style:dotted;
+    width: 35vh;
+}
+
+p:nth-of-type(5){
+    background-color: rgb(250, 250, 250);
+    border: solid rgb(127, 64, 104);
+    border-style:dashed;
+    width: 35vh;
+}
+#punane{
+    color: rgb(208, 37, 37);
+}
+#Time{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+#Comic{
+    font-family: sans-serif;
+    font-size: 10px;
+}
+#Courier{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+#Arial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#Calibri{
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harjutus3</title>
+    <script src="harjutus3.js"></script>
+</head>
+<body>
+    <h1>Arvutamine</h1>
+    <h2>Sõidu aeg ja kaugus</h2>
+    <section class="w-25 row">
+        <form onsubmit="return CalculateTravelTime();" method="Post">
+            <div class="TimeCalculator">
+            <fieldset>
+                <label for="kaugus" >Kaugus (km):</label>
+                <input placeholder ="kaugus" type="number" id="kaugus" name="kaugus" required/>
+                <br />
+                <label for="kiirus">Kiirus (km/h):</label>
+                <input placeholder="kiirus" type="number" id="kiirus" name="kiirus" required/>
+                <br />                
+            </fieldset> 
+            <input value="submite" name="Aeg" type="submit"/>
+            </div>
+        </form>
+        <div id="travelTimeResult"></div>
+    </section>
+    <h2>Postituste kuvamine</h2>
+    <section class="w-25 row">
+        <form onsubmit="return CalculateLastPage();" method="Post">
+            <div class="PostCalculator">
+            <fieldset>
+                <label for="Postitused" >Postitused:</label>
+                <input placeholder ="Postitused" type="number" id="Postitused" name="Postitused" required/>
+                <br />
+                <label for="Max_Post_P">MaxPostOnPage:</label>
+                <input placeholder="Max_Post_P" type="number" id="Max_Post_P" name="Max_Post_P" required/>
+                <br />                
+            </fieldset> 
+            <input value="submite" name="Viimane_leht" type="submit"/>
+            </div>
+        </form>
+        <div id="PageResult"></div>
+    </section>
+    <h2>Serveri Töökulu</h2>
+    <section class="w-25 row">
+        <form onsubmit="return CalculatePrice();" method="Post">
+            <div class="PriceCalculator">
+            <fieldset>
+                <label for="ServeriVoimus" >ServeriVoimus:</label>
+                <input placeholder ="ServeriVoimus" type="number" id="ServeriVoimus" name="ServeriVoimus" required/>
+                <br />
+                <label for="ElektriHind">ElektriHind:</label>
+                <input placeholder="ElektriHind" type="number" id="ElektriHind" name="ElektriHind" required/>
+                <br />                
+            </fieldset> 
+            <input value="submite" name="Töökulu" type="submit"/>
+            </div>
+        </form>
+        <div id="PriceResult"></div>
+    </section>
+</body>
+</html>

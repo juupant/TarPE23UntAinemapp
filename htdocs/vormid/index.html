@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="et">
+	<head>
+    <meta charset="UTF-8">
+	<title>HTML Vormid</title>
+	</head>
+	<body>
+	<h1>HTML Vormid</h1>
+	<h2>Vormid 1</h2>
+	<form action="#" method="post">
+	
+	<fieldset>
+		<legend>Kasutaja andmed</legend>
+		<label>
+			Kasutajanimi: <input name="username" maxlength="20" type="text"><br> <br>
+		</label>
+		
+		<label for="password">Parool: </label> <br>
+		<input id="password" minlength="8" name="password" type="password"><br>
+		
+		<label for="email"> email: </label> <br>
+		<input id="email" name="email" type="email" placeholder="asd@ga.me"><br>
+		
+		<label for="url"> url: </label> <br>
+		<input id="url" name="url" type="url"><br>
+
+	</fieldset>
+	<input formNoValidate type="submit" value="saada valideerimata">
+	<input type="submit" value="saada">
+	</form>
+	
+	<h2>Vormid 2</h2>
+	<h3>otsing</h3>
+	<form method="get" action="#">
+		<input type="search" name="search" list="minu_valik" size="20">
+		  <datalist id="minu_valik">
+			<option value="php õpetused">
+			<option value="css õpetused">
+			<option value="html õpetused">
+			<option value="javascript õpetused">
+  </datalist>
+		<input type="submit" value="Otsi">
+	
+	
+	<h3>Mitmerealine tekstikast</h3>
+	<label>Essee<br>
+		<textarea rows="10" cols="60" name="essay" placeholder="kirjuta vähemalt 100-sõnaline essee teemal minu esimene arvuti"></textarea>
+	</label>
+	
+	<h3>kuupäev ja kellaaeg</h3>
+		<label>Kuupäev ja kellaaeg:<input type="datetime"></label><br>
+		<label>Kuupäev: <input type="date"></label><br>
+		<label>Aasta ja kuu: <input type="month"></label><br>
+		<label>Aasta ja nädal: <input type="week"></label><br>
+		<label>Kellaeg: <input type="time"></label><br>
+		<label>Kohalik aeg: <input type="datetime-local"></label>
+	</form>
+	<h3>numbrid ja skaala</h3>
+	<form>
+		<label>Vali number: </label>
+		<input type="number" value="1" min="1" max="5" step="0.5">
+	</form>
+	<form>
+		<label>Vali number:
+		<input oninput="amount.value=vahemik.value" type="range" name="vahemik" value="-10" min="-10" max="10" step="1">
+		</label>
+		<output id="amount">-10</output>
+	</form>
+	<h3>loendid</h3>
+	<form>
+		<label for="color">vali värv</label> <br>
+		<select id="color" oninput="colorInput.value=color.value">
+		<option value="">Puudub</option>
+		<option value="#FF0000">Punane</option>
+		<option value="#00FF00">Roheline</option>
+		<option value="#FFFF00">Kollane</option>
+		</select>
+		<input type="color" id="colorInput">
+	</form>
+	<form>
+		<select id="color" oninput="colorInput.value=color.value">
+		<optgroup label="Külmad toonid">
+			<option value="#00ff00">Roheline</option>
+			<option value="#0000FF">Sinine</option>
+			<option value="#7F00FF">Violett</option>
+		</optgroup>
+		<optgroup label="soojad toonid">
+			<option value="#FFFF00">kollane</option>
+			<option value="#FF0000">punane</option>
+			<option value="#FFA500">oranž</option>
+		</optgroup>
+		
+		</select>
+		
+		
+	</form>
+	<h3>valikud</h3>
+	<form>
+		<label><input type="checkbox" name="varv" value="pun">Punane<br></label>
+		<label><input type="checkbox" name="varv" value="sin">sinine<br></label>
+		<label><input type="checkbox" name="varv" value="kol" checked>kollane<br></label>
+		<label><input type="checkbox" name="varv" value="lil">lilla<br></label>
+		<input type="submit" value="saada">
+	</form>
+	<form>
+		<label><input type="radio" name="varv" value="pun">Punane<br></label>
+		<label><input type="radio" name="varv" value="sin">sinine<br></label>
+		<label><input type="radio" name="varv" value="kol">kollane<br></label>
+		<label><input type="radio" name="varv" value="lil">lilla<br></label>
+		<input type="submit" value="saada">
+	</form>
+	</body>
+</html>

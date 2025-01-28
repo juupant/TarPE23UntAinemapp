@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="et">
+	<head>
+    <meta charset="UTF-8">
+	<title>HTML Vormid</title>
+	</head>
+	<body>
+	<h2>Vormide loomine</h2>
+	<form action="#" method="post">
+	<fieldset>
+		
+		<label>
+			Kasutajanimi: <input name="username" maxlength="6" type="text" placeholder="max pikkus 6"> <br><br>
+		</label>
+		
+		<label for="kursus">kursus: </label>
+		<input id="kursus" maxlength="3" name="kursus" type="text" placeholder="max pikkus 3"><br><br>
+		
+		<label>Osakonna number: </label>
+		<input type="number" value="1" min="1" max="5" step="1"><br> <br>
+		
+		<label for="password">Parool: </label> 
+		<input id="password" minlength="8" name="password" type="password"><br> <br>
+	</form>
+	<form>
+		<label for="list">vali teenus</label> 
+		<select id="list">
+		<option value="">Odav 0,59€</option>
+		<option value="1">kallis</option>
+		<option value="2">odavam</option>
+		<option value="3">odavaim</option>
+		</select>
+		
+	</form>
+	<form>
+		<label for="radio">Roll:</label>
+		<label><input type="radio" name="varv" value="Admin">Admin<br></label>
+		
+		<label><input type="radio" name="varv" value="Moderaator">Moderaator<br></label>
+		
+		<label><input type="radio" name="varv" value="User">User<br></label>
+
+	</form>
+		<form>
+		<label for="radio">Nõustun tingimustega: </label>
+		<label><input type="checkbox" name="varv" value="pun"><br></label>
+
+	</form>
+		<label>Enesetutvustus:
+		<textarea rows="10" cols="60" name="essay"></textarea>
+	</label>
+	
+
+	</fieldset>
+	
+	</body>
+</html>
