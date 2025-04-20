@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        bitcoin kalkulaator on lihtne windowsi rakendus, mis arvutab bitcoini väärtust erinevates valuutades. <br>
+        kasutaja sisestab bitcoini koguse ja valib sihtvaluuta. rakendus kasutab coindesk api-t, et saada reaalajas vahetuskursid.<br>
+         toetatud valuutad on usd (usa dollar), eur (euro), gbp (briti nael) ja eek (eesti kroon, arvutatakse euro alusel). <br>
+         programm kontrollib, kas sisestatud number on positiivne ja kas valuuta on valitud. <br>
+         kui kõik on korras, arvutab ta bitcoini väärtuse vastavalt vahetuskursile ja näitab tulemust koos sobiva valuuta sümboliga. <br>
+         kui sisend on vale, kuvatakse veateade. rakendus on tehtud c# ja windows formsi abil ning kasutab newtonsoft.json-it json-andmete töötlemiseks. <br>
+         vajab .net frameworki ja internetiühendust, et ligi pääseda api-le. eek teisendamine kasutab fikseeritud vahetuskurssi 15.6466 eek euro kohta, <br>
+         kuna kroon ei ole enam kasutusel.<br>
+    </p>
+    <li><a href="./btc-calc.drawio.png">drawio chart</a></li>
+    <li><a href="https://github.com/juupant/BitcoinCalc">repo link</a></li>
+</body>
+</html>
